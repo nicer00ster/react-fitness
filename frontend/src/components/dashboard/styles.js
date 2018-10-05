@@ -11,15 +11,15 @@ const styles = theme => ({
     // position: 'relative',
     display: 'flex',
   },
-  rootWrapper: {
-    ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2,
-    width: '100%',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
-    borderTop: '1px solid rgba(0, 0, 0, 0.25)',
-  },
+  // rootWrapper: {
+  //   ...theme.mixins.gutters(),
+  //   paddingTop: theme.spacing.unit * 2,
+  //   paddingBottom: theme.spacing.unit * 2,
+  //   width: '100%',
+  //   borderTopLeftRadius: 0,
+  //   borderTopRightRadius: 0,
+  //   borderTop: '1px solid rgba(0, 0, 0, 0.25)',
+  // },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['width', 'margin'], {
@@ -121,6 +121,11 @@ const styles = theme => ({
   },
   rightIcon: {
     marginLeft: theme.spacing.unit,
+  },
+  speedDial: {
+    position: 'absolute',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 3,
   },
 });
 

@@ -78,21 +78,19 @@ function EnhancedForm(props) {
               {props.user.isLoading && <CircularProgress size={24} className={classes.buttonProgress} />}
             </div>
           </form>
-          {
-            props.component === 'Register'
-              ? <Link to="/login">
-                  <Button variant="contained" color="secondary" className={classes.button}>
-                    Login
-                    <FitnessCenter className={classes.rightIcon} />
-                  </Button>
-                </Link>
-              : <Link to="/register">
-                  <Button variant="contained" color="secondary" className={classes.button}>
-                    Register
-                    <CloudUploadIcon className={classes.rightIcon} />
-                  </Button>
-                </Link>
-          }
+          {props.component === 'Register'
+            ? <Link to="/login">
+                <Button variant="contained" color="secondary" className={classes.button}>
+                  Login
+                  <FitnessCenter className={classes.rightIcon} />
+                </Button>
+              </Link>
+            : <Link to="/register">
+                <Button variant="contained" color="secondary" className={classes.button}>
+                  Register
+                  <CloudUploadIcon className={classes.rightIcon} />
+                </Button>
+              </Link>}
         </Paper>
       </main>
     </React.Fragment>
